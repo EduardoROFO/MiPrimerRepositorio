@@ -1,0 +1,17 @@
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\ImageMap001.exe
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\ImageMap001.deps.json
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\ImageMap001.runtimeconfig.json
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\ImageMap001.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\ImageMap001.pdb
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.Form1.resources
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.Resources.resources
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.vbproj.GenerateResource.cache
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.AssemblyInfoInputs.cache
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.AssemblyInfo.vb
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.vbproj.CoreCompileInputs.cache
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\refint\ImageMap001.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.pdb
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.genruntimeconfig.cache
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ref\ImageMap001.dll
