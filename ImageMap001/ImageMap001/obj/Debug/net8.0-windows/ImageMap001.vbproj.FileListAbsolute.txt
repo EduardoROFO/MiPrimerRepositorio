@@ -15,3 +15,7 @@ C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ref
 C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.pdb
 C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.genruntimeconfig.cache
 C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ref\ImageMap001.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\bin\Debug\net8.0-windows\RestSharp.dll
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.vbproj.AssemblyReference.cache
+C:\Users\davfa\source\repos\ImageMap001\ImageMap001\obj\Debug\net8.0-windows\ImageMap001.vbproj.CopyComplete

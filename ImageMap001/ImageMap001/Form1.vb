@@ -8,14 +8,30 @@
 Imports System.Reflection.Emit
 Imports Newtonsoft.Json
 Imports RestSharp
+Imports System.IO
 
 Public Class Form1
+
+    Dim contadorFilas As Integer = 0 'Abajo del Public Class
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Incrementa el contador de filas
+        contadorFilas += 1
+
+
+        ' Crea un array para representar los datos de una fila
+        Dim imagenSeleccionada As Image = PictureBox4.Image
+        Dim nuevaFila As Object() = {contadorFilas, TextBox1.Text, ComboBox1.Text, ComboBox2.Text, ComboBox4.Text, ComboBox3.Text, RichTextBox1.Text, imagenSeleccionada}
+
+
+        ' Agrega la nueva fila al DataGridView
+        DataGridView1.Rows.Add(nuevaFila)
+    End Sub
 
     'Imagen
 
     'PictureBox1 Imagen de colores
     'PictureBox2 Imagen de vista
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
 
         'Obtener coordenadas del clic del mouse
         Dim xy As MouseEventArgs = TryCast(e, MouseEventArgs)
@@ -28,11 +44,27 @@ Public Class Form1
         Dim map As New Bitmap(PictureBox1.Image)
         Dim color As Color = map.GetPixel(x, y)
 
+        Dim map0 As New Bitmap(PictureBox2.Image)
+        Dim color0 As Color = map0.GetPixel(x, y)
+
         'Transforma los datos RGB en el formato "r, g, b"
         Dim rgbColor As String = $"{color.R}, {color.G}, {color.B}"
+        Dim rgbColor0 As String = $"{color0.R}, {color0.G}, {color0.B}"
 
         'Cambia el texto del Label1 a los valores en RGB del color seleccionado
-        Label1.Text = $"RGB: {rgbColor}"
+        Label1.Text = $"RGB: {rgbColor0}"
+
+        'Switch que permite identificar en base a colores las diferentes lados del cuerpo(Los colores son identificados en RGB)
+        Select Case rgbColor0
+            Case "255, 242, 0"
+                ComboBox4.Text = "DORSAL"
+            Case "255, 127, 39"
+                ComboBox4.Text = "FRONTAL"
+            Case "237, 28, 36"
+                ComboBox4.Text = "COSTADO"
+            Case Else
+                ComboBox4.Text = "NO ESPECIFICA"
+        End Select
 
         'Switch que permite identificar en base a colores las diferentes partes del cuerpo(Los colores son identificados en RGB)
         Select Case rgbColor
@@ -222,4 +254,69 @@ Public Class Form1
                 TextBox1.Text = "Ninguna selección"
         End Select
     End Sub
+
+    Private Sub CargarDatoslengua()
+        ' URL de la API que deseas consultar
+        Dim apiUrl As String = "http://187.188.213.206:18080/api/senasparticulares"
+
+
+        ' Crea una instancia de RestClient
+        Dim client As New RestClient(apiUrl)
+
+        ' Crea una solicitud GET utilizando RestRequest
+        Dim request As New RestRequest(Method.GET)
+
+        Try
+            ' Ejecuta la solicitud
+            Dim response As IRestResponse = client.Execute(request)
+
+            ' Verifica si la solicitud fue exitosa (código de estado 200)
+            If response.StatusCode = System.Net.HttpStatusCode.OK Then
+                ' Lee el contenido de la respuesta como una cadena JSON
+                Dim jsonContent As String = response.Content
+
+                ' Deserializa el JSON a una lista de objetos (ajusta el tipo según tu estructura)
+                Dim data As List(Of Lengua) = JsonConvert.DeserializeObject(Of List(Of Lengua))(jsonContent)
+
+                For Each lengua As Lengua In data
+                    'CheckedListBox2.Items.Add(lengua.valor)
+                Next
+            Else
+                ' Muestra un mensaje de error si la solicitud no fue exitosa
+                MessageBox.Show($"Error: {response.StatusCode} - {response.ErrorMessage}")
+            End If
+        Catch ex As Exception
+            MessageBox.Show($"Error al realizar la solicitud: {ex.Message}")
+        End Try
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        ' Configurar el OpenFileDialog
+        OpenFileDialog1.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png|Todos los archivos|*.*"
+        OpenFileDialog1.Title = "Seleccionar una imagen"
+
+        ' Mostrar el cuadro de diálogo y comprobar si se seleccionó un archivo
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            ' Obtener la ruta del archivo seleccionado
+            Dim rutaArchivo As String = OpenFileDialog1.FileName
+
+            ' Mostrar la imagen en el PictureBox
+            MostrarImagen(rutaArchivo)
+        End If
+    End Sub
+
+    Private Sub MostrarImagen(rutaArchivo As String)
+        ' Verificar si el archivo existe
+        If File.Exists(rutaArchivo) Then
+            ' Cargar la imagen en el PictureBox
+            PictureBox4.Image = Image.FromFile(rutaArchivo)
+        Else
+            MessageBox.Show("El archivo seleccionado no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+End Class
+
+Public Class Lengua
+    Public Property Id As Integer
+    Public Property valor As String
 End Class
