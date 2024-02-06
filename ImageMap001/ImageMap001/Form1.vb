@@ -169,7 +169,7 @@ Public Class Form1
                 TextBox1.Text = "EPIGASTRO"
             Case "157, 177, 87"
                 TextBox1.Text = "FLANCO"
-            Case "127, 177, 90"
+            Case "121, 177, 90"
                 TextBox1.Text = "FOSA ILIACA"
             Case "91, 177, 109"
                 TextBox1.Text = "HIPOCONDRIO"
