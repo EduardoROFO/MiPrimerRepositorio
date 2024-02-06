@@ -12,19 +12,25 @@ Imports System.IO
 
 Public Class Form1
 
-    Dim contadorFilas As Integer = 0 'Abajo del Public Class
+    Dim inCoordenadas As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Incrementa el contador de filas
-        contadorFilas += 1
+        If (TextBox1.Text <> "") And (ComboBox1.Text <> "") And (ComboBox2.Text <> "") And (ComboBox4.Text <> "") And (ComboBox3.Text <> "") And (RichTextBox1.Text <> "") And (inCoordenadas <> "") Then
+            Dim contadorFilas As Integer = 0
+
+            ' Incrementa el contador de filas
+            contadorFilas += 1
+
+            ' Obtener imagen
+            Dim imagenSeleccionada As Image = PictureBox4.Image
+            ' Crea un array para representar los datos de una fila
+            Dim nuevaFila As Object() = {contadorFilas, TextBox1.Text, ComboBox1.Text, ComboBox2.Text, ComboBox4.Text, ComboBox3.Text, RichTextBox1.Text, imagenSeleccionada, inCoordenadas}
 
 
-        ' Crea un array para representar los datos de una fila
-        Dim imagenSeleccionada As Image = PictureBox4.Image
-        Dim nuevaFila As Object() = {contadorFilas, TextBox1.Text, ComboBox1.Text, ComboBox2.Text, ComboBox4.Text, ComboBox3.Text, RichTextBox1.Text, imagenSeleccionada}
-
-
-        ' Agrega la nueva fila al DataGridView
-        DataGridView1.Rows.Add(nuevaFila)
+            ' Agrega la nueva fila al DataGridView
+            DataGridView1.Rows.Add(nuevaFila)
+        Else
+            MsgBox("Llena los campos requeridos", vbOKOnly, "Error")
+        End If
     End Sub
 
     'Imagen
@@ -39,6 +45,7 @@ Public Class Form1
         Dim y As Integer = xy.Y
 
         Label3.Text = $"Coordenadas: {x}, {y}"
+        inCoordenadas = $"{x}, {y}"
 
         'Obtener colores de la posicion del clic del mouse
         Dim map As New Bitmap(PictureBox1.Image)

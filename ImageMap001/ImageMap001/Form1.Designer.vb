@@ -54,6 +54,7 @@ Partial Class Form1
         Column6 = New DataGridViewTextBoxColumn()
         Column7 = New DataGridViewTextBoxColumn()
         Column8 = New DataGridViewImageColumn()
+        Column9 = New DataGridViewTextBoxColumn()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -278,7 +279,7 @@ Partial Class Form1
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8})
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9})
         DataGridView1.Location = New Point(28, 682)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
@@ -350,10 +351,18 @@ Partial Class Form1
         Column8.ReadOnly = True
         Column8.Width = 125
         ' 
+        ' Column9
+        ' 
+        Column9.HeaderText = "Coordenadas"
+        Column9.MinimumWidth = 6
+        Column9.Name = "Column9"
+        Column9.ReadOnly = True
+        Column9.Width = 125
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
-        AutoScaleMode = AutoScaleMode.Font
+        AutoScaleDimensions = New SizeF(120.0F, 120.0F)
+        AutoScaleMode = AutoScaleMode.Dpi
         ClientSize = New Size(1132, 903)
         Controls.Add(DataGridView1)
         Controls.Add(Button4)
@@ -421,5 +430,6 @@ Partial Class Form1
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewImageColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
 
 End Class
