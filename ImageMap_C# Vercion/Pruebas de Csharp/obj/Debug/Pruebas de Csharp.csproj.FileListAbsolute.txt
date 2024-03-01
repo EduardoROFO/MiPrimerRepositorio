@@ -1,0 +1,30 @@
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.AssemblyReference.cache
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Form1.resources
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Properties.Resources.resources
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.GenerateResource.cache
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.CoreCompileInputs.cache
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe.config
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.pdb
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.exe
+C:\Users\aerf0\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.pdb
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.AssemblyReference.cache
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Form1.resources
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Properties.Resources.resources
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.GenerateResource.cache
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.CoreCompileInputs.cache
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.exe
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.pdb
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe.config
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe
+C:\Users\davfa\source\repos\Pruebas de Csharp\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.pdb
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe.config
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.exe
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\bin\Debug\Pruebas de Csharp.pdb
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.AssemblyReference.cache
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Form1.resources
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas_de_Csharp.Properties.Resources.resources
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.GenerateResource.cache
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.csproj.CoreCompileInputs.cache
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.exe
+C:\Users\davfa\source\repos\ImageMap_C# Vercion\Pruebas de Csharp\obj\Debug\Pruebas de Csharp.pdb
